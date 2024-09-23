@@ -1,16 +1,26 @@
 {
-  "name": "stepper",
+  "name": "stepperleon",
   "version": "0.0.1",
   "description": "Stepper avec barre de progression",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx rimraf dist && tsc --declarationDir dist --emitDeclarationOnly && npx babel ./lib --out-dir dist --extensions \".ts,.tsx\" --copy-files --presets=@babel/preset-env,@babel/preset-react,@babel/preset-typescript"
   },
   "author": "NOEL-Emmanuel",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/react": "^18.3.8",
     "react": "^18.3.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.6.2"
+  },
+  "peerDependencies": {
+    "react":"^18.3.1"
   }
 }
