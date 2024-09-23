@@ -1,0 +1,16 @@
+{
+  "name": "stepper",
+  "version": "0.0.1",
+  "description": "Stepper avec barre de progression",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NOEL-Emmanuel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2"
+  }
+}
